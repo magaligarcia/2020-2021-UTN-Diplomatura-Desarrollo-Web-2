@@ -1,0 +1,731 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: rgba(0, 0, 0, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------------------------------------------------------------------------MENU FLEXBOX---------*/
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+.menu-flex li a {
+    display:block;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: .5em 1em;
+}
+
+.menu-flex ul li:hover {
+    background: rgba(192, 191, 191, 0.1);
+}
+
+.menu-flex ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-flex li {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+
+/*----------------------------------------------------------------------------------SECTION INICIO---------*/
+/* .contenedor-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    position: absolute; 
+    top: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.4);
+    animation-name: titulo-move;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes titulo-move {
+    from {
+        font-size: 50px;
+    }
+
+    to {
+        font-size:55px;
+        color:rgba(87, 87, 87);
+        opacity: 0.5;
+    }
+} */
+.imagen-inicio img {
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    
+}
+
+/*--------------------------------------------------------------------------SECTION NOSOTROS / RECONOCIMIENTOS---------*/
+
+.contenedor-reconocimientos {
+    width: 100%;   
+}
+hr {
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Antic', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 30px;
+}
+
+h4 {margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 30px;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+/* --------------------------------------COPA SVG ---------------------------------- */
+.img_svg {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 25%;
+    
+}
+
+
+.vino {
+    opacity: 0;
+    animation-name: vino-anima;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes vino-anima {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    70%{
+        opacity: 0.7;
+    }
+
+    80%{
+        opacity: 0.8
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.recon {
+    display: flex;
+    justify-content: center;
+    
+}
+.centrado {
+    margin-left: 70px;
+    margin-right: 5px;
+    padding: 0 5em;
+}
+
+.cards{
+    background: rgb(255, 255, 255, 0.1);
+    margin-bottom: 5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+
+/*----------------------------------------------------------------------CAJAS DE RECONOCIMIENTO EN EL INDEX------*/
+.recon-1 {  /*----------------------------------MEJOR VINO------*/
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    margin-right: 25px;
+    border-radius: 20px;
+    background-image: url(/img/recon-vino.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;  
+}
+
+.texto-recon-1:hover, .texto-recon-1:focus, .texto-recon-2:hover, .texto-recon-2:focus, .texto-recon-3:hover, .texto-recon-3:focus, .texto-recon-4:hover, .texto-recon-4:focus{
+    opacity: 0.5;
+}
+
+
+.texto-recon-1 a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #fff;
+}
+
+.recon-2 { /*----------------------------------MEJOR UBICACION------*/
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    margin-right: 25px;
+    border-radius: 20px;
+    background-image: url(/img/recon-ubicacion.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.texto-recon-2 a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.recon-3 { /*--------------------------------------MEJOR CHEF------*/
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    margin-right: 25px;
+    border-radius: 20px;
+    background-image: url(/img/recon-chef.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.texto-recon-3 a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.recon-4 { /*----------------------------------------MEJOR CARNE------*/
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    margin-right: 25px;
+    border-radius: 20px;
+    background-image: url(/img/recon-carne.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.texto-recon-4 a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+/*----------------------------------------boton atras------*/
+
+.container {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: block;
+    position: fixed;    
+  }
+
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  .imagen-pag-recon {
+      display: block;
+      border: 0;
+      width: 100%;
+      height: auto;
+    margin: 0;
+  }
+
+  .titulo-pag-recon {
+      font-size: xx-large;
+      font-weight: 800;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(255, 255, 255, 0.7);
+      
+  }
+/*-----------------------------------------------------------------------------GALERIA-------------------------------------------------*/
+
+.galeria {
+    clear:both;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    
+}
+
+.galeria img {
+    width: 100px;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+/*--------------------------------------VIDEO------*/
+#mivideo {
+    display: block;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#botonera_video li a{
+    display:block;
+    text-decoration: none;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 50px;
+    
+    
+}
+#botonera_video ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/*-----------------------------------------------------------------------------CONTACTO-------------------------------------------------*/
+.contenedor-contacto {
+    margin-bottom: 30px;
+    
+}
+
+.contenedor_boton_reserva {
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button, .btn {
+    min-width: 100px;
+    min-height: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: -12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button:hover, .button:focus, .btn:hover, .btn:focus {
+    color: #313133;
+    transform: translateY(-8px) translateX(5px);
+    box-shadow: -10px 10px 10px
+  }
+
+button:hover::before, button:focus::before, .btn::before {
+  opacity: 1;
+}
+
+button::after{
+  content: '';
+  width: 10px; height: 10px;
+  border-radius: 100%;
+  border: 3px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100%{
+    height: 150px; 
+    width: 150px;
+    opacity: 0;
+  }
+}
+
+.formulario {
+    
+    
+    font-family: Calibri;
+    
+    
+}
+
+#txtForm{
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.form{
+    
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}   
+
+input {
+    background: rgba(43, 42, 42, 0.9);
+    border-radius: 5px;
+    display: block;
+    width: 70%;
+	padding: 2%;
+	margin-bottom: 2%;
+    border-width: 2px;
+    border-color: rgba(170, 170, 170, 0.5);
+    
+}
+
+#consulta {
+    width: 70%;
+    padding: 2%;
+    font-family: Calibri;
+    border-width: 2px;
+    border-color: rgba(170, 170, 170, 0.5);
+    border-radius: 5px;
+    background: rgba(43, 42, 42, 0.9);
+    color: #fff;
+}
+
+#submit {   
+    width: 30%;
+    border-radius: 10px;
+    font-size: 100%;
+    font-weight: 600;
+    color: rgba(170, 170, 170, 0.5);
+}
+
+#submit:hover {
+    background-color: rgba(110, 110, 110, 0.7);
+}
+
+
+
+/*-----------------------------------------------------------------------------FOOTER-------------------------------------------------*/
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    background: rgba(87, 87, 87, 0.342);
+    color: rgba(165, 164, 164, 0.5);
+    padding-bottom: 10px;
+}
+
+
+
+/*--------------------------------------------------------------------RESPONSIVE 1025/1920px ---------------------------------------*/
+@media screen and (min-width:1025px) and (max-width: 1920px){
+    
+    h1 {
+        font-weight: 100;
+        font-size: 50px;
+        padding-top: 15px;
+    }
+    
+    h3{
+        margin-top: 10px;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        padding-top: 20px;
+    }
+    
+    
+    .imagen-inicio img {
+    height: 300px;
+    }
+    .img_svg {
+        margin-left: 35%;
+    }
+    /*      RECONOCIMIENTOS      */
+    .recon-1, .recon-2, .recon-3, .recon-4 {
+        height: 150px;
+        margin-right: 15px;
+    
+    }
+    
+    .texto-recon-1 a, .texto-recon-2 a, .texto-recon-3 a, .texto-recon-4 a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 30px;
+        font-weight: 700;
+    
+    }
+    
+    /*      GALERIA      */
+    
+    .galeria img {
+    height: 100px;
+    }
+
+    #botonera_video li a{
+        margin-top: 10px;
+        font-size: 25px; 
+        margin-left: 8px;
+    }
+
+
+    .formulario {
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/*--------------------------------------------------------------------RESPONSIVE 600/1024px */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    
+    nav ul li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        
+    }
+    h1 {
+        font-weight: 100;
+        font-size: 30px;
+        padding-top: 8px;
+    }
+    
+    h3{
+        margin-top: 10px;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        padding-top: 20px;
+    }
+    
+    .imagen-inicio img {
+    width: 100%;
+    height: 50%;
+    }
+
+    .img_svg {
+        margin-left: 30%;
+    }
+    /*      RECONOCIMIENTOS      */
+    .centrado {
+        padding: 0 3em;
+    }
+
+    .recon-1, .recon-2, .recon-3, .recon-4 {
+        height: 150px;
+        margin-right: 5px;
+    
+    }
+    
+    .texto-recon-1 a, .texto-recon-2 a, .texto-recon-3 a, .texto-recon-4 a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 15px;
+        font-weight: 700;
+    
+    }
+
+    
+    /*      GALERIA      */
+ 
+    .galeria img {
+    width: 75px;
+    }
+    
+    #botonera_video li a{
+        font-size: 40px; 
+        margin-left: 10px;  
+    }
+
+    /*      FORMULARIO      */
+    .formulario {
+        width: 80%;
+        padding-left: 20%;
+        
+    }
+    
+}
+
+/*--------------------------------------------------------------------RESPONSIVE -599px */
+@media screen and (max-width: 599px){
+
+/*      INICIO      */
+
+.menu-flex ul {
+    display: block;
+}
+.menu-flex li a {
+    font-size: 20px;
+    padding: .3em 1em;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 45%;
+    
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    padding-top: 20px;
+}
+
+
+.imagen-inicio img {
+    height: 150px;
+    margin-top:48%;
+}
+
+
+.img_svg {
+    margin-left: -30%;
+}
+
+/*      RECONOCIMIENTOS      */
+
+.centrado {
+    padding: 0 2em;
+}
+
+.titulo-pag-recon {
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+.recon-1, .recon-2, .recon-3, .recon-4 {
+    height: 150px;
+    margin-right: 5px;
+
+}
+
+.texto-recon-1 a, .texto-recon-2 a, .texto-recon-3 a, .texto-recon-4 a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+
+
+/*      GALERIA      */
+
+
+
+.galeria img {
+    width: 40px;
+    
+}
+
+#botonera_video li a{
+    font-size: 30px;  
+    margin-left: 20px;  
+}
+
+/*      FORMULARIO      */
+
+
+.btn {
+    min-width: 55px;
+    min-height: 10px;
+    font-size: 12px;
+
+}
+.formulario {
+    width: 80%;
+    margin-left:15%;
+}
+
+}
+@media screen and (min-width: 450px) and (max-width: 599px){
+    .imagen-inicio img {
+        height: 200px;
+        margin-top: 40%;
+    }
+
+    h1 {
+        margin-top: 34%;
+    }
+
+    #svg {
+        margin-left: 40%;
+    }
+}
